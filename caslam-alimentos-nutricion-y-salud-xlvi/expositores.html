@@ -3,21 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Expositores — Caslam-Alimentos Nutrición y Salud XLVI</title>
+  <meta name="color-scheme" content="light" />
+  <title>Expositores — Test</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
   <nav class="nav">
-    <a href="index.html" class="nav-brand">Caslam-Alimentos Nutrición y Salud XLVI</a>
-    <div class="nav-links">
-      <a href="programa.html">Programa</a>
-      <a href="expositores.html">Expositores</a>
-    </div>
-  </nav>
+  <a href="index.html" class="nav-brand">Inicio</a>
+  <button class="nav-burger" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')" aria-label="Menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <div class="nav-links"><a href="programa.html">Programa</a><a href="expositores.html">Expositores</a><a href="inscripciones.html">Inscripciones</a><a href="contacto.html">Contacto</a></div>
+</nav>
   <div class="container">
     <h2 class="section-title">Expositores</h2>
-    <p style="color:var(--muted)">No hay expositores registrados.</p>
+    <div class="speakers-grid">
+  <div class="speaker-card">
+    <div class="speaker-photo-placeholder">🎤</div>
+    <div class="speaker-info">
+      <div class="speaker-name">Prueba</div>
+      
+    </div>
   </div>
-  <footer class="footer">Caslam-Alimentos Nutrición y Salud XLVI — Sitio generado estáticamente</footer>
+</div>
+
+  </div>
+  <footer class="footer">Test</footer>
 </body>
 </html>
