@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/caslam-alimentos-nutricion-y-salud-xlvi/:path*",
+      "has": [{ "type": "host", "value": "congresocaslan2026.com.ar" }]
+    },
+    {
+      "source": "/:path*",
+      "destination": "/caslam-alimentos-nutricion-y-salud-xlvi/:path*",
+      "has": [{ "type": "host", "value": "www.congresocaslan2026.com.ar" }]
+    }
+  ]
+}
