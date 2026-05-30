@@ -1,4 +1,5 @@
-﻿:root {
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+:root {
   color-scheme: light;
   --primary: #366092;
   --secondary: #366092;
@@ -13,7 +14,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html, body { max-width: 100%; overflow-x: hidden; }
 img { max-width: 100%; height: auto; }
-body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
+body { font-family: 'Roboto', system-ui, sans-serif; background: var(--surface); color: var(--text); line-height: 1.6; }
 .puck-richtext { word-break: break-word; overflow-wrap: anywhere; }
 .puck-richtext h1,.puck-richtext h2,.puck-richtext h3,
 .puck-richtext h4,.puck-richtext h5,.puck-richtext h6 { font-size: inherit; font-weight: 700; margin: .5em 0 .25em; }
