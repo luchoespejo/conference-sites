@@ -16,10 +16,19 @@
     .fs-2xl  { font-size: clamp(1.5rem,   1.25rem   + 1.25vw,   2.25rem);  }
     .fs-3xl  { font-size: clamp(1.75rem,  1.3333rem + 2.0833vw, 3rem);     }
     .fs-4xl  { font-size: clamp(2rem,     1.4167rem + 2.9167vw, 3.75rem);  }
+    html, body { max-width: 100%; overflow-x: hidden; }
+    img { max-width: 100%; height: auto; }
     /* Puck richtext */
+    .puck-richtext { word-break: break-word; overflow-wrap: anywhere; }
     .puck-richtext h1,.puck-richtext h2,.puck-richtext h3,
     .puck-richtext h4,.puck-richtext h5,.puck-richtext h6 { font-size: inherit; font-weight: 700; margin: .5em 0 .25em; }
     .puck-richtext p { margin: .5em 0 .85em; }
+    .ql-align-center  { text-align: center; }
+    .ql-align-right   { text-align: right; }
+    .ql-align-justify { text-align: justify; }
+    .ql-size-small { font-size: .75em; }
+    .ql-size-large { font-size: 1.5em; }
+    .ql-size-huge  { font-size: 2.5em; }
     .puck-richtext ul { list-style: disc; padding-left: 1.5em; margin: .5em 0 .85em 1em; }
     .puck-richtext ol { list-style: decimal; padding-left: 1.5em; margin: .5em 0 .85em 1em; }
     .puck-richtext li { margin-bottom: .3em; }
@@ -33,8 +42,10 @@
 <body>
   <nav class="nav">
   <a href="index.html" class="nav-brand">Inicio</a>
-  <button class="nav-burger" onclick="this.closest('nav').querySelector('.nav-links').classList.toggle('open')" aria-label="Menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
-  <div class="nav-links"><a href="programa.html">Programa</a><a href="inscripciones.html">Inscripciones</a><a href="informacion.html">Información</a><a href="contacto.html">Contacto</a></div>
+  <div class="nav-burger-wrap">
+    <button class="nav-burger" onclick="var l=this.nextElementSibling;l.classList.toggle('open')" aria-label="Menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links"><a href="programa.html">Programa</a><a href="inscripciones.html">Inscripciones</a><a href="informacion.html">Información</a><a href="contacto.html">Contacto</a></div>
+  </div>
 </nav>
   <main><div style="font-family:system-ui, sans-serif">
 <div style="background:transparent;padding:0.375rem 2rem">
@@ -71,7 +82,7 @@
   <div style="color:#374151;line-height:1.7;" class="puck-richtext fs-xs">
     <ul><li><p><strong>Instagram:</strong> <a href="https://instagram.com/caslan_oficial" target="_blank" rel="noopener noreferrer">@caslan_oficial</a></p></li><li><p><strong>Email para consultas: </strong><a href="mailto:congresoCaslan2026@gmail.com" target="_blank" rel="noopener noreferrer">congresoCaslan2026@gmail.com</a></p></li></ul>
   </div>
-</div><div id="cd-a6438692c6924b68a6bd2a4a236cf9a5" style="background:#f8fafc;padding:0.313rem 2rem;text-align:center">
+</div><div id="cd-876f8289aa484ebdade37550785fa99f" style="background:#f8fafc;padding:0.313rem 2rem;text-align:center">
   <div style="font-size:0.938rem;color:#334155;margin-bottom:1.5rem;font-weight:600">⏳comienza en</div>
   <div class="cd-display" style="display:inline-flex;gap:1.5rem;flex-wrap:wrap;justify-content:center">
     <div>
@@ -79,15 +90,15 @@
       <div style="font-size:.875rem;color:#64748b;margin-top:.25rem">días</div>
     </div>
     <div>
-      <div class="cd-val" style="font-size:1.5rem;font-weight:900;color:#1e3a5f;line-height:1">14</div>
+      <div class="cd-val" style="font-size:1.5rem;font-weight:900;color:#1e3a5f;line-height:1">13</div>
       <div style="font-size:.875rem;color:#64748b;margin-top:.25rem">horas</div>
     </div>
     <div>
-      <div class="cd-val" style="font-size:1.5rem;font-weight:900;color:#1e3a5f;line-height:1">28</div>
+      <div class="cd-val" style="font-size:1.5rem;font-weight:900;color:#1e3a5f;line-height:1">34</div>
       <div style="font-size:.875rem;color:#64748b;margin-top:.25rem">min</div>
     </div>
     <div>
-      <div class="cd-val" style="font-size:1.5rem;font-weight:900;color:#1e3a5f;line-height:1">59</div>
+      <div class="cd-val" style="font-size:1.5rem;font-weight:900;color:#1e3a5f;line-height:1">49</div>
       <div style="font-size:.875rem;color:#64748b;margin-top:.25rem">seg</div>
     </div>
   </div>
@@ -95,7 +106,7 @@
 <script>
 (function(){
   var tgt=new Date("2026-08-10T12:00").getTime();
-  var el=document.getElementById("cd-a6438692c6924b68a6bd2a4a236cf9a5");
+  var el=document.getElementById("cd-876f8289aa484ebdade37550785fa99f");
   if(!el)return;
   var vals=el.querySelectorAll(".cd-val");
   var show=[true,true,true,true];
@@ -110,6 +121,6 @@
 </script>
 </div>
 </main>
-  <footer class="footer">© 2026 @EspejoBassett · Derechos reservados</footer>
+  <footer class="footer">© 2026 @Espejo y Bassett · Derechos reservados</footer>
 </body>
 </html>
