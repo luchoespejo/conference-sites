@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Disertaciones — Congreso de Alimentación Siglo XXI</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    /* ── Póster de disertantes · grilla de una pantalla (prefijo dz-) ── */
+    .dz-top { background: var(--primary); color:#fff; text-align:center; padding:1rem 1.25rem .9rem; }
+    .dz-top h1 { font-size:clamp(1.25rem,3.5vw,1.7rem); font-weight:800; letter-spacing:-.01em; }
+    .dz-top p { font-size:.74rem; color:rgba(255,255,255,.7); margin-top:.15rem; letter-spacing:.03em; }
+
+    .dz-wrap { max-width:1200px; margin:0 auto; padding:1rem 1rem 1.75rem; }
+
+    .dz-day-bar { display:flex; align-items:baseline; gap:.6rem; margin:.9rem 0 .7rem; padding-bottom:.35rem; border-bottom:2px solid var(--primary); }
+    .dz-day-name { font-size:1rem; font-weight:800; color:var(--primary); text-transform:uppercase; letter-spacing:.03em; }
+    .dz-day-sub { font-size:.72rem; color:var(--muted); font-weight:500; }
+    .dz-day-count { margin-left:auto; font-size:.68rem; color:var(--muted); font-weight:600; }
+
+    .dz-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(330px, 1fr)); gap:.6rem; }
+
+    /* Tarjeta uniforme: columna icono+hora | charla, nombre, institución */
+    .dz-card { display:flex; gap:.7rem; background:var(--surface); border:1px solid var(--border); border-radius:var(--r); padding:.7rem .8rem; box-shadow:var(--shadow); }
+
+    .dz-avcol { display:flex; flex-direction:column; align-items:center; gap:.3rem; width:52px; flex-shrink:0; }
+    .dz-av { width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.74rem; font-weight:700; }
+    /* Único color: amarillo limón */
+    .dz-av { background:#fef9c3; color:#a16207; }
+    .dz-time { font-size:.58rem; font-weight:700; color:var(--primary); text-align:center; line-height:1.15; letter-spacing:.01em; }
+
+    .dz-info { flex:1; min-width:0; }
+    .dz-talk { font-size:.72rem; font-style:italic; color:#475569; line-height:1.35; margin-bottom:3px; }
+    .dz-name { font-size:.78rem; font-weight:700; color:var(--text); line-height:1.2; }
+    .dz-inst { font-size:.66rem; color:var(--muted); margin-top:1px; line-height:1.25; }
+
+    @media (max-width:520px){
+      .dz-grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+  <a href="index.html" class="nav-brand">Inicio</a>
+  <div class="nav-burger-wrap">
+    <button class="nav-burger" onclick="var l=this.nextElementSibling;l.classList.toggle('open')" aria-label="Menú"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    <div class="nav-links"><a href="disertaciones.html">Disertantes</a><a href="programa.html">Programa</a><a href="inscripciones.html">Inscripciones</a><a href="informacion.html">Información</a><a href="contacto.html">Contacto</a></div>
+  </div>
+</nav>
+
+  <main class="dz-wrap">
+
+    <!-- ══════════ LUNES 10 ══════════ -->
+    <div class="dz-day-bar">
+      <span class="dz-day-name">Lunes</span>
+      <span class="dz-day-sub">10 de agosto</span>
+      <span class="dz-day-count">9 disertantes</span>
+    </div>
+    <div class="dz-grid">
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-1">NS</span><span class="dz-time">09:30<br>10:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Composición de alimentos y su rol en los sistemas alimentarios sostenibles"</div>
+          <div class="dz-name">Dra. Norma Samman</div>
+          <div class="dz-inst">UNJu y CIITED CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-2">JL</span><span class="dz-time">11:00<br>12:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Bacterias lácticas y alimentos saludables: nuevos enfoques en nutrición funcional"</div>
+          <div class="dz-name">Dr. Jean Guy LeBlanc</div>
+          <div class="dz-inst">CERELA / CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-3">RM</span><span class="dz-time">12:00<br>13:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Estrategias tecnológicas para el desarrollo de productos sin gluten"</div>
+          <div class="dz-name">Dra. Rita Miranda</div>
+          <div class="dz-inst">UNJu y CIITED CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-4">CS</span><span class="dz-time">12:00<br>13:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Transformación de cultivos andinos"</div>
+          <div class="dz-name">Dra. Cristina Segundo</div>
+          <div class="dz-inst">UNJu y CIITED CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-5">JR</span><span class="dz-time">12:00<br>13:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Quinoa: de proteína de calidad a la generación de péptidos bioactivos"</div>
+          <div class="dz-name">Dr. Julio Rueda</div>
+          <div class="dz-inst">UNJu y CIITED CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-2">VA</span><span class="dz-time">14:30<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Servicio que brindan a la comunidad, los procedimientos para el control de alimentos"</div>
+          <div class="dz-name">Bqca. Ma. Virginia Apud</div>
+          <div class="dz-inst">Dir. de Bromatología · Min. Salud Pública</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-1">MA</span><span class="dz-time">14:30<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Ética en investigación: niños, niñas y adolescentes en investigaciones locales"</div>
+          <div class="dz-name">Abog. Marcos Arias Amicone</div>
+          <div class="dz-inst">Comité de Ética en Investigación · UNT / CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-6">LC</span><span class="dz-time">14:30<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Evidencia territorial para fortalecer la seguridad alimentaria: del diagnóstico espacial a la innovación alimentaria"</div>
+          <div class="dz-name">Dra. Laura Cordero</div>
+          <div class="dz-inst">INTEPH CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-8">PA</span><span class="dz-time">14:30<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Nutrición en entornos saludables"</div>
+          <div class="dz-name">Lic. Paola Aredes</div>
+          <div class="dz-inst">CASLAN Catamarca</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════ MARTES 11 ══════════ -->
+    <div class="dz-day-bar">
+      <span class="dz-day-name">Martes</span>
+      <span class="dz-day-sub">11 de agosto</span>
+      <span class="dz-day-count">14 disertantes</span>
+    </div>
+    <div class="dz-grid">
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-3">ER</span><span class="dz-time">09:00<br>10:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Alimentación, educación nutricional y salud pública: estrategias para la prevención de enfermedades no transmisibles"</div>
+          <div class="dz-name">Dra. Eliana Rodríguez</div>
+          <div class="dz-inst">UNSTA</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-7">CM</span><span class="dz-time">09:00<br>10:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Actualización del rotulado alimentario en Argentina: lineamientos vigentes y perspectivas regulatorias"</div>
+          <div class="dz-name">Lic. Celina Moreno</div>
+          <div class="dz-inst">SAGyP</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-8">AM</span><span class="dz-time">10:30<br>12:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Uso sustentable de biopolímeros y polifenoles de productos forestales no maderables del NOA para el diseño de envases bioactivos para aumentar la vida estante de los alimentos"</div>
+          <div class="dz-name">Dra. Alejandra Moreno</div>
+          <div class="dz-inst">INBIOFIV CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-2">SV</span><span class="dz-time">10:30<br>12:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Reducción de pérdidas en alimentos a través de nuevas estrategias para el control no contaminante de enfermedades postcosecha en limones"</div>
+          <div class="dz-name">Dra. Sabrina Volentini</div>
+          <div class="dz-inst">INSIBIO CONICET UNT</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-5">MS</span><span class="dz-time">10:30<br>12:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Revalorización del subproducto del tomate"</div>
+          <div class="dz-name">Dra. María Sance</div>
+          <div class="dz-inst">UNCUYO · Mendoza</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-1">CA</span><span class="dz-time">14:00<br>15:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Efecto de la germinación sobre las propiedades fisicoquímicas y tecnofuncionales de granos andinos"</div>
+          <div class="dz-name">Lic. Cintya Salinas Alcón</div>
+          <div class="dz-inst">UNJu · Jujuy</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-7">FP</span><span class="dz-time">14:00<br>15:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Transformación de almidones nativos obtenidos de cultivos andinos y leguminosas del NOA: caracterización y perspectivas de modificación funcional"</div>
+          <div class="dz-name">Lic. Franco Matías Paz</div>
+          <div class="dz-inst">UNJu · Jujuy</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-4">LS</span><span class="dz-time">14:00<br>15:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Terroir microbiano como recurso tecnológico: biopreservación natural y desarrollo de vinos funcionales sostenibles"</div>
+          <div class="dz-name">Lic. Leila Sufe</div>
+          <div class="dz-inst">UNSTA</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-3">CP</span><span class="dz-time">14:00<br>15:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Cracker bioandino: innovación alimentaria con enfoque en nutrición de precisión"</div>
+          <div class="dz-name">Lic. Ma. Paz Cornejo Plizzo</div>
+          <div class="dz-inst">UNSTA</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-5">SS</span><span class="dz-time">14:00<br>15:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Desarrollo de un alimento tipo aderezo utilizando concentrado proteico de ñuñas (Phaseolus vulgaris L.) y aceite de semillas de albahaca (Ocimum basilicum L.)"</div>
+          <div class="dz-name">Lic. Sandra Sánchez-Catorceno</div>
+          <div class="dz-inst">UNJu · Jujuy</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-2">ND</span><span class="dz-time">15:00<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Revalorización de granos andinos a través del desarrollo tecnológico de masas para empanadas: avances de un proyecto con impacto social en el NOA"</div>
+          <div class="dz-name">Dra. Natalia Domínguez</div>
+          <div class="dz-inst">UNJu y CIITED CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-7">FR</span><span class="dz-time">15:00<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Transformación del orujo de uva de la producción de vinos de altura en ingredientes alimentarios"</div>
+          <div class="dz-name">Dr. Francisco Ríos</div>
+          <div class="dz-inst">UNJu y CIITED CONICET</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-5">GP</span><span class="dz-time">15:00<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Desarrollo de un alimento cárnico embutido saludable con el agregado de extracto acuoso de propóleo (EAP) como conservante"</div>
+          <div class="dz-name">Dr. Gastón Pancrazio</div>
+          <div class="dz-inst">UNER</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-6">LG</span><span class="dz-time">15:00<br>16:30</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Divulgando la ciencia de los alimentos para promover una alimentación saludable"</div>
+          <div class="dz-name">Dra. Laura López y Dra. Carola Greco</div>
+          <div class="dz-inst">UBA</div>
+        </div>
+      </div>
+
+      <div class="dz-card">
+        <div class="dz-avcol"><span class="dz-av av-5">GB</span><span class="dz-time">16:45<br>18:00</span></div>
+        <div class="dz-info">
+          <div class="dz-talk">"Microbioma y alimentación: el diálogo profundo entre lo que comemos y nuestras bacterias intestinales"</div>
+          <div class="dz-name">Lic. Guadalupe Benavidez</div>
+          <div class="dz-inst">Lic. en Nutrición · UBA</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">© 2026 @Espejo y Bassett · Derechos reservados</footer>
+</body>
+</html>
